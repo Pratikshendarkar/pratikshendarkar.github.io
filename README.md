@@ -1,2 +1,0 @@
-# pratikshendarkar.io
-portfolio
