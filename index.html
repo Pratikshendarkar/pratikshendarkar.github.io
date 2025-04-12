@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <!-- Favicon -->
@@ -20,6 +18,24 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="Portfolio of Pratik Shendarkar, a Data Scientist.">
     <meta name="keywords" content="Pratik Shendarkar, Data Scientist, Portfolio, Machine Learning">
+    <!-- Custom CSS -->
+    <style>
+        /* Reduced spacing between hero and about sections */
+        #hero-section.hero {
+            padding-bottom: 0 !important;
+        }
+        #about {
+            padding-top: 1.5rem !important;
+        }
+        /* Tighter hero section spacing */
+        .herotext h1.display-4 {
+            margin-bottom: 0.5rem !important;
+        }
+        .herotext .lead {
+            margin-bottom: 1rem !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Dark Background -->
@@ -39,11 +55,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav" style="margin-left: 50%;"> 
-                        <!-- Navigation Links -->
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <!-- Other nav items -->
                         <li class="nav-item">
                             <a class="nav-link" href="#education">Education</a>
                         </li>
@@ -56,7 +70,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
-                        <!-- Remove Publications if not applicable -->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
@@ -66,21 +79,18 @@
         </nav>
         <!-- Hero Section -->
         <div id="hero-section" class="hero">
-            <div class="container text-center herotext pt-1 pb-1">
+            <div class="container text-center herotext pt-1 pb-0">
                 <h1 class="display-4 wow fadeInDown mb-2">Pratik Shendarkar</h1>
                 <p class="lead wow fadeInUp mb-2">Data Scientist</p>
-                <!-- <a href="https://drive.google.com/file/d/1NfgInfiprnEXBjhYeY71s1OLDeclqbKe/view?usp=sharing" target="_blank" class="btn btn-primary mt-3">Resume</a> -->
                 <a href="Pratik_Shendarkar.pdf" target="_blank" class="btn btn-primary mt-2">Resume</a>
                 <a href="#contact" class="btn btn-primary mt-2 ml-2">Get in Touch</a>
             </div>
         </div>
-        
-        
     </header>
 
     <div id="main-content">
     <!-- About Section -->
-    <section id="about" class="py-3">
+    <section id="about" class="pt-2 pb-3">
         <div class="container">
             <h2 class="text-center section-title wow fadeInUp">About Me</h2>
             <div class="row align-items-center">
@@ -103,169 +113,169 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title wow fadeInUp">Skills</h2>
-        <div class="row">
-            <div class="col-md-4 wow fadeInLeft">
-                <h4>Programming Languages</h4>
-                <ul>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>Scala</li>
-                    <li>SQL</li>
-                    <li>Pyspark</li>                    
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="col-md-4 wow fadeInUp">
-                <h4>Data Science & Engineering</h4>
-                <ul>
-                    <li>ETL Processes</li>
-                    <li>Machine Learning Pipelines</li>
-                    <li>Data Lake Architecture</li>
-                    <li>A/B Testing</li>
-                    <li>Advanced SQL</li>
-                    <li>SAS</li>
-                    <li>MATLAB</li>
-                    <li>Statistical Analysis</li>
-                    <li>Spark</li>
-                    <li>Natural Language Processing (NLP)</li>
-                    <li>Data Mining</li>
-                </ul>
-            </div>
-            <div class="col-md-4 wow fadeInRight">
-                <h4>Big Data & Cloud Technologies</h4>
-                <ul>
-                    <li>AWS (Redshift, SageMaker, Lambda, EC2)</li>
-                    <li>Google Cloud Platform</li>
-                    <li>Docker</li>
-                    <li>Apache Spark, Hadoop, Kafka</li>
-                    <li>Airflow</li>
-                    <li>Agile & Scrum Methodologies</li>
-                    <li>RDBMS & NoSQL Databases</li>
-                </ul>
-            </div>
-            <div class="col-md-4 wow fadeInUp">
-                <h4>Database & Visualization Tools</h4>
-                <ul>
-                    <li>NoSQL & PostgreSQL</li>
-                    <li>Tableau</li>
-                    <li>Power BI</li>
-                    <li>AWS QuickSight</li>
-                    <li>Looker</li>
-                    <li>Figma</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title wow fadeInUp">Experience</h2>
-        <div class="experience-item wow fadeInLeft">
-            <div class="row align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="images/zs.png" alt="ZS Associates Logo" class="company-logo img-fluid">
-                </div>
-                <div class="col-md-10">
-                    <h3>Business Technology Associate</h3>
-                    <h5>ZS Associates | Nov 2021 – July 2024</h5>
+        <div class="container">
+            <h2 class="text-center section-title wow fadeInUp">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 wow fadeInLeft">
+                    <h4>Programming Languages</h4>
                     <ul>
-                        <li>Designed ETL framework and implemented CI/CD data pipelines in IICS and Snowflake, developed scalable data models using SQL, Python, and Spark across GCP and Azure.</li>
-                        <li>Leveraged Power BI/Tableau to deliver 15+ interactive dashboard featuring demand forecasting KPIs and trackers resulting in a 21% improvement in business performance for the client.</li>
-                        <li>Automated data wrangling process for 200+ datasets with Python Rest API and JavaScript, improving ETL efficiency and reducing system processing time by 40%.</li>
-                        <li>Designed, and deployed machine learning models using Apache Kafka and Hadoop; curated complex datasets and managed production workflows on AWS Lambda.</li>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Scala</li>
+                        <li>SQL</li>
+                        <li>Pyspark</li>                    
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h4>Data Science & Engineering</h4>
+                    <ul>
+                        <li>ETL Processes</li>
+                        <li>Machine Learning Pipelines</li>
+                        <li>Data Lake Architecture</li>
+                        <li>A/B Testing</li>
+                        <li>Advanced SQL</li>
+                        <li>SAS</li>
+                        <li>MATLAB</li>
+                        <li>Statistical Analysis</li>
+                        <li>Spark</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Data Mining</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 wow fadeInRight">
+                    <h4>Big Data & Cloud Technologies</h4>
+                    <ul>
+                        <li>AWS (Redshift, SageMaker, Lambda, EC2)</li>
+                        <li>Google Cloud Platform</li>
+                        <li>Docker</li>
+                        <li>Apache Spark, Hadoop, Kafka</li>
+                        <li>Airflow</li>
+                        <li>Agile & Scrum Methodologies</li>
+                        <li>RDBMS & NoSQL Databases</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <h4>Database & Visualization Tools</h4>
+                    <ul>
+                        <li>NoSQL & PostgreSQL</li>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>AWS QuickSight</li>
+                        <li>Looker</li>
+                        <li>Figma</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="experience-item wow fadeInRight">
-            <div class="row align-items-center">
-                <div class="col-md-2 text-center">
-                    <img src="images/cognizant.png" alt="Cognizant Logo" class="company-logo img-fluid">
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title wow fadeInUp">Experience</h2>
+            <div class="experience-item wow fadeInLeft">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                        <img src="images/zs.png" alt="ZS Associates Logo" class="company-logo img-fluid">
+                    </div>
+                    <div class="col-md-10">
+                        <h3>Business Technology Associate</h3>
+                        <h5>ZS Associates | Nov 2021 – July 2024</h5>
+                        <ul>
+                            <li>Designed ETL framework and implemented CI/CD data pipelines in IICS and Snowflake, developed scalable data models using SQL, Python, and Spark across GCP and Azure.</li>
+                            <li>Leveraged Power BI/Tableau to deliver 15+ interactive dashboard featuring demand forecasting KPIs and trackers resulting in a 21% improvement in business performance for the client.</li>
+                            <li>Automated data wrangling process for 200+ datasets with Python Rest API and JavaScript, improving ETL efficiency and reducing system processing time by 40%.</li>
+                            <li>Designed, and deployed machine learning models using Apache Kafka and Hadoop; curated complex datasets and managed production workflows on AWS Lambda.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-10">
-                    <h3>Big Data Analyst</h3>
-                    <h5>Cognizant Technology Solutions | Jan 2021 – Oct 2021</h5>
-                    <ul>
-                        <li>Optimized data ingestion and processing workflows by leveraging cloud architecture; streamlined AWS usage to reduce operational costs and improved processing speed by 30% via caching and query optimization.</li>
-                        <li>Automated ingestion of high-volume datasets (1TB/day) from BigQuery and Elasticsearch using Airflow DAGs, cutting processing time by 35% through efficient parallelization.</li>
-                        <li>Managed Agile delivery as a Scrum Master, utilizing Agile frameworks and System Integration Testing to implement scalable, efficient solutions aligned with business goals.</li>
-                        <li>Designed scalable MapReduce pipeline and implemented data migration from HDFS environments to AWS to process near real-time data, reducing job runtime by 30% through optimized partitioning and parallel task execution.</li>
-                    </ul>
+            </div>
+            <div class="experience-item wow fadeInRight">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                        <img src="images/cognizant.png" alt="Cognizant Logo" class="company-logo img-fluid">
+                    </div>
+                    <div class="col-md-10">
+                        <h3>Big Data Analyst</h3>
+                        <h5>Cognizant Technology Solutions | Jan 2021 – Oct 2021</h5>
+                        <ul>
+                            <li>Optimized data ingestion and processing workflows by leveraging cloud architecture; streamlined AWS usage to reduce operational costs and improved processing speed by 30% via caching and query optimization.</li>
+                            <li>Automated ingestion of high-volume datasets (1TB/day) from BigQuery and Elasticsearch using Airflow DAGs, cutting processing time by 35% through efficient parallelization.</li>
+                            <li>Managed Agile delivery as a Scrum Master, utilizing Agile frameworks and System Integration Testing to implement scalable, efficient solutions aligned with business goals.</li>
+                            <li>Designed scalable MapReduce pipeline and implemented data migration from HDFS environments to AWS to process near real-time data, reducing job runtime by 30% through optimized partitioning and parallel task execution.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title wow fadeInUp">Projects</h2>
-        <div class="row">
-            <div class="col-md-6 wow zoomIn">
-                <a class="card" href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank">
-                    <img src="images/credit_limit.png" class="card-img-top" alt="Credit Limit Optimization">
-                    <div class="card-body">
-                        <h5 class="card-title">Credit Limit Optimization – Machine Learning</h5>
-                        <p class="card-text">Optimized credit limits using logistic regression on transactional data. Deployed using AWS, PostgreSQL, and Python ML stack.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 wow zoomIn" data-wow-delay="0.2s">
-                <a class="card" href="https://github.com/Pratikshendarkar/Reddit-Sentimental-analysis" target="_blank">
-                    <img src="images/sentiment.png" class="card-img-top" alt="Sentiment Analysis">
-                    <div class="card-body">
-                        <h5 class="card-title">Sentiment Analysis / Text Extraction – NLP</h5>
-                        <p class="card-text">Built an NLP model using NLTK/Vader to extract product insights. Achieved 89.68% accuracy with automation pipeline.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title wow fadeInUp">Certifications</h2>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item wow fadeInLeft dark-blue-text">AWS Certified Solutions Architect – Associate (Exam Candidate, Feb 2025)</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center section-title wow fadeInUp">Contact Me</h2>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 wow fadeInUp">
-                <form action="https://formspree.io/f/xrbgpaee" method="POST" target="_blank">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                </form>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title wow fadeInUp">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 wow zoomIn">
+                    <a class="card" href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank">
+                        <img src="images/credit_limit.png" class="card-img-top" alt="Credit Limit Optimization">
+                        <div class="card-body">
+                            <h5 class="card-title">Credit Limit Optimization – Machine Learning</h5>
+                            <p class="card-text">Optimized credit limits using logistic regression on transactional data. Deployed using AWS, PostgreSQL, and Python ML stack.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 wow zoomIn" data-wow-delay="0.2s">
+                    <a class="card" href="https://github.com/Pratikshendarkar/Reddit-Sentimental-analysis" target="_blank">
+                        <img src="images/sentiment.png" class="card-img-top" alt="Sentiment Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Sentiment Analysis / Text Extraction – NLP</h5>
+                            <p class="card-text">Built an NLP model using NLTK/Vader to extract product insights. Achieved 89.68% accuracy with automation pipeline.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="text-center py-3">
-    <p>&copy; 2024 Pratik Shendarkar</p>
-</footer>
-</div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title wow fadeInUp">Certifications</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item wow fadeInLeft dark-blue-text">AWS Certified Solutions Architect – Associate (Exam Candidate, Feb 2025)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title wow fadeInUp">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 wow fadeInUp">
+                    <form action="https://formspree.io/f/xrbgpaee" method="POST" target="_blank">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Pratik Shendarkar</p>
+    </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
