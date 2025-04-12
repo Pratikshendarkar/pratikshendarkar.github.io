@@ -1,0 +1,286 @@
+/* Custom Stylesheet */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Background */
+#dark-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    z-index: 1;
+}
+
+/* Vanta.js Background */
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Main Content Wrapper */
+#main-content {
+    position: relative;
+    z-index: 3;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(31, 31, 31, 0.8);
+}
+
+.nav-link {
+    color: #e0e0e0 !important;
+}
+
+.nav-link:hover {
+    color: #bb86fc !important;
+}
+
+.hero {
+    background: url('images/2hero-bg.png') center / cover no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 0.7;
+    z-index: 3;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.herotext {
+    margin-top: -17vh; /* Adjust top margin to push the content down */
+    font-family: 'Lato', sans-serif; /* Stylish font family */
+    color: #ffffff; /* Ensures text is bright white */
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds a white glow to enhance readability */
+}
+
+/* Adding styles to increase visibility and brightness */
+h1.display-4, p.lead {
+    color: #ffffff; /* Ensures text is bright white */
+    font-weight: 700; /* Makes the font bolder */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds depth and contrast */
+}
+.btn-secondary {
+    background-color: #6c757d; /* A standard gray; change as needed */
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* A darker shade for hover effect */
+    border-color: #545b62;
+}
+
+/* .hero {
+    background: url('images/2hero-bg.png') center / cover no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 0.7;
+    z-index: 3;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.herotext {
+    margin-top: -17vh; 
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    z-index: 2;
+} */
+
+/* You can adjust font-weights or styles as needed */
+h1.display-4 {
+    font-weight: 700;
+}
+
+p.lead {
+    font-weight: 300;
+}
+
+a.btn-primary {
+    font-weight: 400;
+}
+
+
+
+/* Sections */
+section {
+    background-color: rgba(18, 18, 18, 0.8);
+    padding: 60px 0;
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #bb86fc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+
+/* Text Colors */
+body, p, h1, h2, h3, h4, h5, h6, span, a {
+    color: #e0e0e0;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #e0e0e0;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #bb86fc;
+}
+
+/* Education and Experience Logos */
+.education-logo, .company-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Experience and Education Items */
+.experience-item, .timeline-item {
+    margin-bottom: 40px;
+}
+
+.experience-item h3, .timeline-item h3 {
+    color: #ffffff;
+}
+
+.experience-item h5, .timeline-item h5 {
+    color: #bb86fc;
+}
+
+.experience-item ul, .timeline-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Project Cards */
+.card {
+    background-color: rgba(31, 31, 31, 0.9);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.card-title, .card-text {
+    color: #e0e0e0;
+}
+
+/* Publications */
+.publications-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.publications-list li {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(31, 31, 31, 0.9);
+    color: #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #bb86fc;
+    border-color: #bb86fc;
+}
+
+.btn-primary:hover {
+    background-color: #9b64d9;
+    border-color: #9b64d9;
+}
+
+/* Forms */
+.form-control {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+.form-control:focus {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    border-color: #bb86fc;
+}
+
+::placeholder {
+    color: #999;
+}
+
+/* Links */
+a {
+    color: #bb86fc;
+}
+
+a:hover {
+    color: #9b64d9;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .experience-item, .timeline-item {
+        margin-bottom: 30px;
+    }
+}
