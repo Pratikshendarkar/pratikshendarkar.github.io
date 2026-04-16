@@ -438,3 +438,44 @@ section {
         margin-top: 4rem;
     }
 }
+
+.certificates {
+    background: var(--second-bg-color);
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.certificates-container .cert-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.certificates-container .cert-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.cert-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.cert-box h3 {
+    font-size: 2.6rem;
+}
+
+.cert-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
