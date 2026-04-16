@@ -1,40 +1,69 @@
+/* toggle icon navbar */
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// Custom JavaScript
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
-$(document).ready(function () {
-// Smooth scrolling
-$('a.nav-link').on('click', function (event) {
-    if (this.hash !== '') {
-        event.preventDefault();
+/* scroll sections active link */
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-        const hash = this.hash;
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-        $('html, body').animate(
-            {
-                scrollTop: $(hash).offset().top - 70,
-            },
-            800
-        );
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+
+    /* sticky navbar */
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    /* remove toggle icon and navbar when click navbar link (scroll) */
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
+
+/* scroll reveal */
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .tech-category, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+/* typed js */
+const typed = new Typed('.multiple-text', {
+    strings: ['Data Scientist', 'Machine Learning Engineer', 'Data Engineer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+/* theme toggle */
+let themeIcon = document.querySelector('#theme-icon');
+
+themeIcon.onclick = () => {
+    document.body.classList.toggle('light-mode');
+    if (document.body.classList.contains('light-mode')) {
+        themeIcon.classList.replace('bxs-moon', 'bxs-sun');
+    } else {
+        themeIcon.classList.replace('bxs-sun', 'bxs-moon');
     }
-});
-
-// Initialize Wow.js for animations
-new WOW().init();
-
-// Initialize Vanta.js Birds Animation on the background div
-VANTA.BIRDS({
-    el: "#vanta-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color1: 0x00a4ff,
-    quantity: 3.00,
-    backgroundAlpha: 0.00
-});
-
-});
-
+};
