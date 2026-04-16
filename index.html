@@ -11,8 +11,10 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Port<span>folio.</span></a>
+        <a href="#home" class="logo">Pratik<span>.</span></a>
+
         <div class="bx bx-menu" id="menu-icon"></div>
+
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -21,7 +23,7 @@
             <a href="#skills">Skills</a>
             <a href="#certificates">Certificates</a>
             <a href="#portfolio">Projects</a>
-            <a href="Resume - Pratik S_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="Resume%20-%20Pratik%20S_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <div class="theme-switch">
                 <i class="bx bxs-moon" id="theme-icon"></i>
             </div>
@@ -32,13 +34,21 @@
         <div class="home-content">
             <h1>Hi, <br> I'm <span>Pratik Shendarkar</span></h1>
             <h3 class="text-animate">I'm a <span class="multiple-text"></span></h3>
-            <p>MS in Data Science @ Rutgers | Azure DSA & AWS SAA Certified | Building scalable ML & Data Platforms | Ex-ZS | Ex-Cognizant</p>
+            <p>Data Scientist with 4 years of experience in advanced analytics, machine learning, and ETL implementation.</p>
+
             <div class="home-sci">
-                <a href="https://www.linkedin.com/in/pratikshendarkar/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/Pratikshendarkar" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-                <a href="mailto:pratikshendarkar@gmail.com"><i class="bx bx-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/pratik-shendarkar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://github.com/Pratikshendarkar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="mailto:pratik.shendarkar@rutgers.edu" aria-label="Email">
+                    <i class="bx bx-envelope"></i>
+                </a>
             </div>
         </div>
+
         <div class="home-img">
             <div class="glowing-circle">
                 <span></span>
@@ -53,39 +63,39 @@
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-content">
-            <h3>Data Scientist & ML Engineer</h3>
-            <p>I am a Data Science graduate student at Rutgers with 4 years of industry experience turning raw data into actionable intelligence. My expertise spans building production-grade ML models, designing robust ETL pipelines, and deploying cloud-based data solutions. I thrive on solving complex problems with cutting-edge AI, from RAG systems to large-scale data processing with Spark and Kafka. Let's build the future of intelligence together.</p>
+            <h3>Data Scientist · ML Engineer · Data Engineer</h3>
+            <p>Skilled in statistical data modeling, visualization, and scalable cloud infrastructure to drive actionable insights. I enjoy building production-ready ML systems, robust ETL pipelines, and data products that connect analytics with business impact.</p>
         </div>
     </section>
 
     <section class="experience" id="experience">
         <h2 class="heading">Work <span>Experience</span></h2>
-        <div class="timeline">
 
+        <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Feb 2025 - Apr 2025</div>
                 <div class="timeline-content">
                     <h3>Machine Learning Associate - Rutgers University</h3>
                     <ul>
-                        <li>Developed and deployed supervised ML models including SVM and XGBoost for feature extraction and pattern prediction, achieving 93.7% accuracy.</li>
-                        <li>Optimized model hyperparameters with RandomizedSearchCV, PCA, and regularization techniques to reduce overfitting.</li>
-                        <li>Established model evaluation workflows using confusion matrices, precision-recall analysis, and F1 scoring to assess classification performance.</li>
-                        <li>Automated model training and testing using AWS SageMaker for weekly updated batch datasets with version-controlled monitoring.</li>
+                        <li>Developed and deployed supervised ML models (SVM, XGBoost) for feature extraction and pattern prediction, achieving 93.7% accuracy.</li>
+                        <li>Optimized model hyperparameters through RandomizedSearchCV, PCA, and regularization techniques to reduce overfitting.</li>
+                        <li>Established evaluation frameworks using confusion matrices, precision-recall, and F1 analysis to assess performance.</li>
+                        <li>Automated ML model training and testing using AWS SageMaker for weekly updated batch datasets.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">Nov 2021 - July 2024</div>
+                <div class="timeline-date">Nov 2021 - Jul 2024</div>
                 <div class="timeline-content">
                     <h3>Business Technology Associate - ZS Associates</h3>
                     <ul>
-                        <li>Designed ETL framework and implemented CI/CD pipelines in Snowflake/IICS, managing data for 6M+ records and improving performance by 21%.</li>
-                        <li>Built interactive dashboards in Power BI/Tableau that drove $1.2M+ in client revenue growth through data-driven demand forecasting.</li>
-                        <li>Automated data wrangling for 200+ datasets using Python and JS, reducing processing time by 40%.</li>
-                        <li>Deployed ML models using Kafka and Hadoop on AWS Lambda to optimize production workflows.</li>
+                        <li>Designed ETL pipelines using Snowflake and dbt, implementing CI/CD workflows with Git for 6M+ records across AWS.</li>
+                        <li>Delivered 10+ interactive Power BI dashboards featuring demand forecasting KPIs and sales tracking.</li>
+                        <li>Created JSON-based configuration templates for Databricks job scheduling and cluster specifications across 40+ workflows.</li>
+                        <li>Implemented lineage tracking with Databricks Unity Catalog and Delta Lake while optimizing Spark jobs through partitioning and bucketing.</li>
                     </ul>
                 </div>
             </div>
@@ -96,47 +106,54 @@
                 <div class="timeline-content">
                     <h3>Big Data Analyst - Cognizant Technology Solutions</h3>
                     <ul>
-                        <li>Streamlined AWS ingestion for 1TB/day datasets using Airflow, reducing operational costs and cutting processing time by 35%.</li>
-                        <li>Optimized MapReduce pipelines and migrated HDFS environments to AWS, improving runtime by 30% through parallelization.</li>
+                        <li>Built batch and streaming pipelines using AWS Glue and Kinesis for real-time ingestion and scheduled ETL into AWS S3 and Redshift.</li>
+                        <li>Implemented infrastructure as code using Terraform and containerized ETL workflows with Docker and Kubernetes.</li>
+                        <li>Monitored Apache Airflow ingestion pipelines integrating Salesforce REST APIs and PostgreSQL into BigQuery.</li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="education" id="education">
         <h2 class="heading">My <span>Education</span></h2>
-        <div class="timeline">
 
+        <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Sept 2024 - May 2026</div>
                 <div class="timeline-content">
-                    <h3>MS in Data Science - Rutgers University</h3>
-                    <p>Relevant Coursework: Statistics Modeling & Computation, Inference Data Science, Machine Learning, Big Data Analytics.</p>
+                    <h3>Master of Data Science - Rutgers, New Jersey State University</h3>
+                    <p>Graduate study in statistics, inference, machine learning, and applied data science. [file:1]</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
+
         <div class="skills-content">
             <div class="skills-box">
+                <i class="bx bxl-python"></i>
                 <h3>Languages & Databases</h3>
                 <p>Python, SQL, R, Scala, Pyspark, Snowflake, BigQuery, PostgreSQL, NoSQL</p>
             </div>
-            <div class="skills-box">
+
+            <div class="skills-box highlighted">
+                <i class="bx bx-brain"></i>
                 <h3>Data Science & ML</h3>
                 <p>GenAI/LLMs (RAG, Agentic AI), NLP, XGBoost, LightGBM, Random Forest, SVM, Spark, Kafka, Airflow, Hadoop</p>
             </div>
+
             <div class="skills-box">
-                <h3>Cloud & DevOps</h3>
+                <i class="bx bxl-aws"></i>
+                <h3>Cloud & Certifications</h3>
                 <p>AWS (Solutions Architect Associate), Azure (Data Scientist Associate), GCP, Docker, CI/CD</p>
             </div>
+
             <div class="skills-box">
+                <i class="bx bx-bar-chart-alt"></i>
                 <h3>Visualization & Tools</h3>
                 <p>Tableau, Power BI, AWS QuickSight, Looker, Figma</p>
             </div>
@@ -145,77 +162,96 @@
 
     <section class="certificates" id="certificates">
         <h2 class="heading">Professional <span>Certifications</span></h2>
-        <div class="certificates-content">
-            <div class="certificate-box">
-                <h3>AWS Certified Solutions Architect - Associate</h3>
-                <p>Amazon Web Services (AWS)</p>
+
+        <div class="skills-container cert-grid">
+            <div class="skills-box">
+                <i class="bx bxl-microsoft"></i>
+                <h3>Azure Data Scientist Associate</h3>
+                <p>Microsoft</p>
             </div>
-            <div class="certificate-box">
-                <h3>Microsoft Certified: Azure Data Scientist Associate</h3>
-                <p>Microsoft Azure</p>
-            </div>
-            <div class="certificate-box">
-                <h3>AWS Certified Cloud Practitioner</h3>
-                <p>Amazon Web Services (AWS)</p>
+
+            <div class="skills-box">
+                <i class="bx bxl-aws"></i>
+                <h3>AWS Solutions Architect Associate</h3>
+                <p>Amazon</p>
             </div>
         </div>
     </section>
 
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Featured <span>Projects</span></h2>
+
         <div class="portfolio-container">
-
             <div class="portfolio-box">
-                <img src="images/fashion.jpg" alt="Fashion System">
+                <img src="images/Sentiment.png" alt="Sentiment Analysis Pipeline">
                 <div class="portfolio-layer">
-                    <h4>Fashion Recommendation System</h4>
-                    <p>GenAI-driven search using Azure OpenAI, FastEmbed, and Qdrant for semantic retrieval.</p>
-                    <a href="https://github.com/Pratikshendarkar/Fashion-Recommendation-System--LLM/tree/main" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+                    <h4>Sentiment Analysis Pipeline</h4>
+                    <ul>
+                        <li>Developed an end-to-end NLP pipeline using TensorFlow, NLTK, and scikit-learn.</li>
+                        <li>Classified Reddit comments with 89.68% accuracy, outperforming baseline by 12%.</li>
+                        <li>Reduced manual review time by 60% and improved response efficiency.</li>
+                    </ul>
+                    <a href="https://github.com/Pratikshendarkar/Reddit-Sentimental-analysis" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bx-link-external"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/rag.jpg" alt="Agentic RAG">
+                <img src="images/kaggle.jpg" alt="Snowflake AI Assistant">
                 <div class="portfolio-layer">
-                    <h4>Agentic RAG System</h4>
-                    <p>Advanced RAG with LangChain for intelligent document intelligence and autonomous agents.</p>
-                    <a href="https://github.com/Pratikshendarkar" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+                    <h4>Snowflake AI Assistant</h4>
+                    <ul>
+                        <li>Built an agentic RAG pipeline using LangChain and Streamlit.</li>
+                        <li>Generated optimized SQL queries from natural language for Snowflake and AWS S3 data.</li>
+                        <li>Implemented semantic search, multi-stage retrieval, vector search, and anomaly detection.</li>
+                    </ul>
+                    <a href="https://github.com/Pratikshendarkar" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bx-link-external"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/credit.jpg" alt="Credit Optimization">
+                <img src="images/credit_limit.png" alt="Credit Card Fraud Detection">
                 <div class="portfolio-layer">
                     <h4>Credit Card Fraud Detection</h4>
-                    <p>ML models (XGBoost, LightGBM) for real-time fraud detection and credit limit optimization.</p>
-                    <a href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+                    <ul>
+                        <li>Built machine learning workflows for fraud detection and credit risk analysis.</li>
+                        <li>Applied tree-based models including XGBoost and LightGBM on structured financial data.</li>
+                        <li>Improved analysis of high-risk transaction patterns and decision support.</li>
+                    </ul>
+                    <a href="https://github.com/pratikshendarkar/Credit_Limit_Optimization" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bx-link-external"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="images/pdf.jpg" alt="RAG Chatbot">
+                <img src="images/fashion.png" alt="Fashion Recommendation System">
                 <div class="portfolio-layer">
-                    <h4>RAG PDF Chat App</h4>
-                    <p>Document intelligence application for interactive PDF chatting using RAG systems.</p>
-                    <a href="https://github.com/Pratikshendarkar" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+                    <h4>Fashion Recommendation System</h4>
+                    <ul>
+                        <li>Built a GenAI-driven semantic recommendation workflow for product discovery.</li>
+                        <li>Used Azure OpenAI, FastEmbed, and Qdrant for retrieval and search relevance.</li>
+                        <li>Improved recommendation quality through vector-based retrieval.</li>
+                    </ul>
+                    <a href="https://github.com/Pratikshendarkar/Fashion-Recommendation-System--LLM/tree/main" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bx-link-external"></i>
+                    </a>
                 </div>
             </div>
-
-            <div class="portfolio-box">
-                <img src="images/reddit.jpg" alt="Reddit NLP">
-                <div class="portfolio-layer">
-                    <h4>Reddit Comment NLP</h4>
-                    <p>NLP pipeline for automated classification of Reddit comments into categories.</p>
-                    <a href="https://github.com/Pratikshendarkar/Reddit-Sentimental-analysis" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <footer class="footer">
-        <p>Copyright &copy; 2026 by Pratik | All Rights Reserved.</p>
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <div class="footer-center">
+            <p>Copyright &copy; 2026 by Pratik Shendarkar | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
